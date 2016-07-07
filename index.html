@@ -18,7 +18,22 @@
 	</head>
 	<body>
 		<div class="login-form">
-			<h1>LEMAF System Deployment</h1>
+			<div class="head-info">
+				<h1 class="lemaf-label">LEMAF System Deployment</h1>
+			</div>
+			<div class="avatar">
+				<img src="images/avatar.png" alt="">
+			</div>
+			<form>
+				<input type="text" class="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" >
+				<div class="key">
+					<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+				</div>
+			</form>
+
+			<div class="signin">
+				<input type="submit" input="Login">
+			</div>
 		</div>
 	</body>
 </html>
