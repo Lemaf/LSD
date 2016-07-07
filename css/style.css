@@ -1,0 +1,10 @@
+body{
+	background: url(../images/bg1.jpg) no-repeat 0px 0px;
+	background-attachment: fixed;
+	font-family: 'Open Sans', sans-serif;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	min-height:1050px;
+}
