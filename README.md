@@ -1,2 +1,0 @@
-# LSD
-LEMAF System Deployment
