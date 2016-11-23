@@ -1,0 +1,83 @@
+
+body {	
+	background-color: #808080;
+}
+
+
+.card-panel {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 20em;
+	height: 20em;
+	transform: translate(-50%, -50%);
+}
+
+
+img.responsive-img, video.responsive-video {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 6em;
+	height: auto;
+	transform: translate(-50%, -50%);
+}
+
+.auth {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 85%;
+	transform: translate(-50%, -50%);
+}
+
+/* Autenticaçao */
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+	background-color: transparent;
+	outline: none;
+	margin: 0px;
+	height: 2.5em;
+	width: 100%;
+	font-size: 1rem;
+	box-shadow: none;
+	box-sizing: content-box;
+	transition: all 0.3s;
+}
+
+input#login {
+	border-top: 1.3px solid #4bca42;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-left: 1.3px solid #4bca42;
+	border-right: 1.3px solid #4bca42;
+}
+
+input#senha {
+	border-left: 1.3px solid #4bca42;
+	border-right: 1.3px solid #4bca42;
+	border-bottom: 1.3px solid #4bca42;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/* checkbox  */
+
+.auth-remember {
+    position: absolute;
+    top: 65%;
+}
+
+/* Button */
+
+div#auth-btn {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn, .btn-large {
+    background-color: #4bca42;
+    width: 18em;
+}
