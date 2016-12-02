@@ -1,0 +1,43 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>LEMAF SYSTEM DEPLOYMENT</title>
+		<link rel="stylesheet" href="{% static 'css/materialize.min.css' %}" media="all">
+		<link rel="stylesheet" href="{% static 'css/normalize.css' %}" media="all">
+		<link rel="stylesheet" href="{% static 'css/auth-screen.css' %}" media="all">
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- Dropdown Structure -->
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="/logout">Logout</a></li>
+		</ul>
+
+		<div class="navbar-fixed">
+		<nav class="navbar navbar-default">
+			<div class="nav-wrapper">
+				<span class="logo-name">LEMAF DEPLOYMENT</span>
+				<ul class="right hide-on-med-and-down">
+					<!-- Dropdown Trigger -->
+					<li class="logout-auth"><a class="dropdown-button" href="#!" data-activates="dropdown1" aria-expanded="false"><i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+
+		{% block content %}
+		{% endblock %}
+
+
+		<script src = "{% static 'js/jquery-3.1.1.min.js' %}"></script>	
+		<script src = "{% static 'js/materialize.min.js' %}"></script>
+		{% block javascript %}
+	        {% endblock %}	
+	</body>
+</html>

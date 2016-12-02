@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		{% if form.errors %}
+
+		<div class="col s12 m4"></div>
+		<p class="auth-error col s12 m4">Seu usuário ou senha estão incorretos.</p>
+		<div class="col s12 m4"></div>
+
+		{% endif %}
+
+		<div class="auth-content col s12 m4 offset-m4">
+			<div class="card-panel white">
+				<div class="logo-auth">
+					<div class="col s12 m4"></div>
+					<img class="col s12 m4" src="{% static 'images/logo.png' %}">
+					<div class="col s12 m4"></div>
+				</div>
+				<div class="auth">
+					<form method="post" action="{% url 'django.contrib.auth.views.login' %}">
+						{% csrf_token %}
+						<td id="username" class="validate">{{ form.username }}</td>
+						<td id="password" class="validate">{{ form.password }}</td>
+				</div>
+
+				<div class="auth-remember">
+					<p>
+					<input id="filled-in-box" class="filled-in" type="checkbox"/>
+					{# <label for="filled-in-box">LEMBRAR</label> #}
+					</p>
+				</div>
+
+				<div class="auth-btn">
+					<input name="next" class="btn" type="submit" value="logar">
+					<input type="hidden" name="next" value="{{ next }}" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
+
+{% block javascript %}
+
+<script>
+{% if not user.is_authenticated %}
+$("ul.right.hide-on-med-and-down").css("display","none");
+{% endif %}
+</script>
+
+{% endblock %}

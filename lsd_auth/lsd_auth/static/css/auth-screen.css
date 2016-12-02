@@ -1,0 +1,185 @@
+body {
+    /* position: fixed; */
+	background: ghostwhite;
+}
+
+nav {
+    color: #fff;
+    background-color: #45B93D;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+
+a.brand-logo img {
+    width: 2.3em;
+}
+
+.logo-content.col.s12.m4 {
+    padding-bottom: 1em;
+}
+
+span.logo-name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-family: arvo;
+}
+
+.auth-content.col.s12.m4 {
+    padding-top: 10%;
+}
+
+
+img.col.s12.m4 {
+    padding-bottom: 5%;
+}
+
+.auth-form.col.s12.m6.offset-m3 {
+    margin-top: 4em;
+}
+
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    background-color: #45b93d;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #6db93d;
+}
+
+.btn-action {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* .card-panel.white { */
+	/* position: fixed; */
+	/* top: 50%; */
+	/* left: 50%; */
+	/* width: 20em; */
+	/* height: 20em; */
+	/* transform: translate(-50%, -50%); */
+/* } */
+
+.card-panel.white {
+    height: 20em;
+}
+
+.card-panel.light-green.lighten-5 {
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	height: 90%;
+	transform: translate(-50%, -50%);
+
+}
+
+
+img.responsive-img.col.s12.m4.offset-m4 {
+	padding-bottom: 1em;
+
+}
+
+.auth-col.col.s12.m4.offset-m4 {
+    padding-top: 5em;
+}
+
+
+/*
+ * .auth {
+ * 	position: absolute;
+ * 	top: 50%;
+ * 	left: 50%;
+ * 	width: 85%;
+ * 	transform: translate(-50%, -50%);
+ * }
+ */
+
+/* Autenticaçao */
+
+/*
+ * input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+ * 	background-color: transparent;
+ * 	outline: none;
+ * 	margin: 0px;
+ * 	height: 2.5em;
+ * 	width: 100%;
+ * 	font-size: 1rem;
+ * 	box-shadow: none;
+ * 	box-sizing: content-box;
+ * 	transition: all 0.3s;
+ * }
+ */
+
+
+input#id_username {
+	border-top: 1.3px solid #4bca42;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-left: 1.3px solid #4bca42;
+	border-right: 1.3px solid #4bca42;
+	margin: 0;
+}
+
+input#id_password {
+	border-left: 1.3px solid #4bca42;
+	border-right: 1.3px solid #4bca42;
+	border-bottom: 1.3px solid #4bca42;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+input.btn {
+	position: relative;
+	/* left: 25%; */
+	/* width: 50%; */
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p.auth-error.col.s12.m4 {
+    text-align: center;
+    color: red;
+}
+
+/* checkbox  */
+
+/*
+ * .auth-remember {
+ *     position: absolute;
+ *     top: 65%;
+ * }
+ * 
+ */
+/* Button */
+/*
+ * 
+ * div#auth-btn {
+ *     position: absolute;
+ *     top: 88%;
+ *     left: 50%;
+ *     transform: translate(-50%, -50%);
+ * }
+ * 
+ * .btn, .btn-large {
+ *     background-color: #4bca42;
+ *     width: 18em;
+ * }
+ * 
+ */
